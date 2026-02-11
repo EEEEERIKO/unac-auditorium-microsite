@@ -138,5 +138,64 @@
       "success": "Request sent successfully",
       "error": "Error sending request"
     }
+  },
+  "services": {
+    "badge": "Institutional Excellence",
+    "title": "Comprehensive Event Services for University Executives",
+    "description": "The Auditorio GW Chapman provides a world-class environment designed to host high-impact academic, cultural, and institutional events with precision and excellence.",
+    "heroImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuBDb1miTFu5P5c92TSz8K2LqZ4JeIrDFSO8Wae2tFiMSZxgKmfCmPtH0l7h66Jgq8KiCvRvMckphHAPdC1lvNvtI5TJJY4gheqqBw2D7XyQmjzgrfBvmj_AxoPqBapGcu2-U3FqaKrg6r-wdbTOHfrwT17vzIsvKCD8bO-Hj2zqPSGW5kh2BwXgurwK8ACBZ4ZiOTwixBeSpsG09JcuU6TBa4-qT-5Yn1mUQjAmqh8H0agZNEyzA09E2fBk9RA8kqEVYRXVnjSzAFKZ",
+    "included": {
+      "title": "Included Services",
+      "subtitle": "Core facilities and support provided with every institutional reservation.",
+      "auditorium": {
+        "title": "Use of the Auditorium",
+        "description": "Full access to the main hall, backstage dressing rooms, and VIP reception areas."
+      },
+      "seating": {
+        "title": "Seating",
+        "description": "Ergonomic seating arrangements for maximum guest comfort during long sessions."
+      },
+      "stage": {
+        "title": "Stage",
+        "description": "Professional-grade performance area equipped with standard ambient lighting setups."
+      },
+      "staff": {
+        "title": "Institutional Staff",
+        "description": "Dedicated personnel to assist with event logistics, guest flow, and protocol management."
+      }
+    },
+    "addons": {
+      "title": "Premium Add-ons",
+      "subtitle": "Enhance your event experience with our high-tech additional services tailored for excellence.",
+      "sound": {
+        "title": "Sound System",
+        "description": "High-fidelity audio setup optimized for concerts, theater, and high-profile speeches.",
+        "feature1": "Wireless Microphones",
+        "feature2": "Digital Mixing Consoles"
+      },
+      "projection": {
+        "title": "LED Screen & Projection",
+        "description": "State-of-the-art visual displays for high-resolution presentations and dynamic media content.",
+        "feature1": "4K Projection Systems",
+        "feature2": "Giant LED Stage Backdrop"
+      },
+      "technical": {
+        "title": "Technical Support",
+        "description": "Specialized AV technicians available on-site throughout the entire duration of your event.",
+        "feature1": "Dedicated Sound Engineer",
+        "feature2": "Real-time Live Stream Support"
+      }
+    },
+    "location": {
+      "title": "Location & Logistics",
+      "description": "Conveniently located within the UNAC campus, the GW Chapman auditorium features accessibility ramps and proximity to secure campus parking.",
+      "campus": "Main University Campus, Bldg C.",
+      "parking": "Reserved Executive Parking Slots"
+    },
+    "cta": {
+      "title": "Ready to host your event?",
+      "subtitle": "Contact our executive team for availability and custom planning.",
+      "button": "Request a Custom Quote"
+    }
   }
 }

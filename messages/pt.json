@@ -138,5 +138,64 @@
       "success": "Solicitação enviada com sucesso",
       "error": "Erro ao enviar a solicitação"
     }
+  },
+  "services": {
+    "badge": "Excelência Institucional",
+    "title": "Serviços Abrangentes de Eventos para Executivos Universitários",
+    "description": "O Auditório GW Chapman oferece um ambiente de classe mundial projetado para sediar eventos acadêmicos, culturais e institucionais de alto impacto com precisão e excelência.",
+    "heroImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuBDb1miTFu5P5c92TSz8K2LqZ4JeIrDFSO8Wae2tFiMSZxgKmfCmPtH0l7h66Jgq8KiCvRvMckphHAPdC1lvNvtI5TJJY4gheqqBw2D7XyQmjzgrfBvmj_AxoPqBapGcu2-U3FqaKrg6r-wdbTOHfrwT17vzIsvKCD8bO-Hj2zqPSGW5kh2BwXgurwK8ACBZ4ZiOTwixBeSpsG09JcuU6TBa4-qT-5Yn1mUQjAmqh8H0agZNEyzA09E2fBk9RA8kqEVYRXVnjSzAFKZ",
+    "included": {
+      "title": "Serviços Inclusos",
+      "subtitle": "Instalações e suporte básicos fornecidos com cada reserva institucional.",
+      "auditorium": {
+        "title": "Uso do Auditório",
+        "description": "Acesso completo ao salão principal, camarins nos bastidores e áreas de recepção VIP."
+      },
+      "seating": {
+        "title": "Assentos",
+        "description": "Arranjos de assentos ergonômicos para máximo conforto dos convidados durante sessões longas."
+      },
+      "stage": {
+        "title": "Palco",
+        "description": "Área de desempenho de qualidade profissional equipada com configurações de iluminação ambiente padrão."
+      },
+      "staff": {
+        "title": "Pessoal Institucional",
+        "description": "Pessoal dedicado para auxiliar na logística do evento, fluxo de convidados e gerenciamento de protocolo."
+      }
+    },
+    "addons": {
+      "title": "Complementos Premium",
+      "subtitle": "Aprimorar sua experiência de evento com nossos serviços adicionais de alta tecnologia ajustados para excelência.",
+      "sound": {
+        "title": "Sistema de Som",
+        "description": "Configuração de áudio de alta fidelidade otimizada para concertos, teatro e discursos de alto nível.",
+        "feature1": "Microfones Sem Fio",
+        "feature2": "Consoles de Mistura Digital"
+      },
+      "projection": {
+        "title": "Tela LED e Projeção",
+        "description": "Displays visuais de última geração para apresentações de alta resolução e conteúdo de mídia dinâmica.",
+        "feature1": "Sistemas de Projeção 4K",
+        "feature2": "Cenário de Fundo de LED Gigante"
+      },
+      "technical": {
+        "title": "Suporte Técnico",
+        "description": "Técnicos de AV especializados disponíveis no local durante toda a duração do seu evento.",
+        "feature1": "Engenheiro de Som Dedicado",
+        "feature2": "Suporte de Transmissão ao Vivo em Tempo Real"
+      }
+    },
+    "location": {
+      "title": "Localização e Logística",
+      "description": "Convenientemente localizado dentro do campus UNAC, o auditório GW Chapman oferece rampas de acessibilidade e proximidade com estacionamento seguro do campus.",
+      "campus": "Campus Universitário Principal, Edifício C.",
+      "parking": "Vagas de Estacionamento Executivo Reservadas"
+    },
+    "cta": {
+      "title": "Pronto para seu evento?",
+      "subtitle": "Entre em contato com nossa equipe executiva para disponibilidade e planejamento personalizado.",
+      "button": "Solicitar uma Cotação Personalizada"
+    }
   }
 }
