@@ -27,8 +27,8 @@ export function Navbar() {
   };
 
   return (
-    <header className={`sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 transition-opacity ${isPending ? 'opacity-75' : 'opacity-100'}`}>
-      <div className="container mx-auto px-6 h-20 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-white dark:bg-background-dark border-b border-slate-200 dark:border-slate-800">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="h-12 w-12 flex items-center justify-center">
             <Image 
@@ -41,29 +41,43 @@ export function Navbar() {
             />
           </div>
           <div>
-            <h1 className="font-bold text-lg leading-tight tracking-tight text-primary">UNAC</h1>
-            <p className="text-[10px] uppercase tracking-widest text-slate-500 dark:text-slate-400 font-semibold">
-              Auditorio GW Chapman
-            </p>
+            <h1 className="text-xl font-bold tracking-tight text-primary uppercase leading-tight">Auditorio GW Chapman</h1>
+            <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest">UNAC - Corporación Universitaria</p>
           </div>
         </div>
         
         <div className="flex items-center gap-8">
-          <nav className="hidden lg:flex items-center gap-8">
-            <Link className="text-sm font-semibold text-primary" href={`/${locale}`} prefetch={true}>
+          <nav className="hidden lg:flex items-center gap-8 text-sm font-medium">
+            <Link 
+              className={`transition-colors ${pathname === `/${locale}` || pathname === `/${locale}/` ? 'text-primary font-bold' : 'text-slate-600 dark:text-slate-400 hover:text-primary'}`}
+              href={`/${locale}`} 
+              prefetch={true}
+            >
               {t('home')}
             </Link>
-            <Link className="text-sm font-medium hover:text-primary transition-colors" href={`/${locale}/auditorium`} prefetch={true}>
+            <Link 
+              className={`transition-colors ${pathname.includes('/auditorium') ? 'text-primary font-bold' : 'text-slate-600 dark:text-slate-400 hover:text-primary'}`}
+              href={`/${locale}/auditorium`} 
+              prefetch={true}
+            >
               {t('auditorium')}
             </Link>
-            <Link className="text-sm font-medium hover:text-primary transition-colors" href={`/${locale}/services`} prefetch={true}>
+            <Link 
+              className={`transition-colors ${pathname.includes('/services') ? 'text-primary font-bold' : 'text-slate-600 dark:text-slate-400 hover:text-primary'}`}
+              href={`/${locale}/services`} 
+              prefetch={true}
+            >
               {t('services')}
             </Link>
-            <Link className="text-sm font-medium hover:text-primary transition-colors" href={`/${locale}/gallery`} prefetch={true}>
+            <Link 
+              className={`transition-colors ${pathname.includes('/gallery') ? 'text-primary font-bold' : 'text-slate-600 dark:text-slate-400 hover:text-primary'}`}
+              href={`/${locale}/gallery`} 
+              prefetch={true}
+            >
               {t('gallery')}
             </Link>
             <Link
-              className="bg-primary text-white px-5 py-2.5 rounded text-sm font-semibold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
+              className={`transition-colors ${pathname.includes('/quote') ? 'text-primary font-bold' : 'text-slate-600 dark:text-slate-400 hover:text-primary'}`}
               href={`/${locale}/quote`}
               prefetch={true}
             >
@@ -71,36 +85,49 @@ export function Navbar() {
             </Link>
           </nav>
           
-          <div className="hidden md:flex items-center border-l border-slate-200 dark:border-slate-700 pl-8 gap-4 text-[11px] font-bold tracking-wider uppercase">
-            <Link
-              className={`cursor-pointer transition-all ${locale === 'es' ? 'text-primary border-b-2 border-primary pb-0.5' : 'text-slate-400 hover:text-primary'}`}
-              href={getLocalizedPath('es')}
-              prefetch={true}
-              title="Español"
-            >
-              ES
-            </Link>
-            <Link
-              className={`cursor-pointer transition-all ${locale === 'en' ? 'text-primary border-b-2 border-primary pb-0.5' : 'text-slate-400 hover:text-primary'}`}
-              href={getLocalizedPath('en')}
-              prefetch={true}
-              title="English"
-            >
-              EN
-            </Link>
-            <Link
-              className={`cursor-pointer transition-all ${locale === 'pt' ? 'text-primary border-b-2 border-primary pb-0.5' : 'text-slate-400 hover:text-primary'}`}
-              href={getLocalizedPath('pt')}
-              prefetch={true}
-              title="Português"
-            >
-              PT
-            </Link>
+          <div className="flex items-center border-l border-slate-200 dark:border-slate-700 ml-4 pl-8">
+            <div className="flex items-center gap-1.5 p-1.5 bg-slate-50 dark:bg-slate-800/50 rounded-lg border border-slate-100 dark:border-slate-800">
+              <Link
+                href={getLocalizedPath('es')}
+                prefetch={true}
+                className={`px-2.5 py-1 text-[10px] font-bold rounded uppercase tracking-wider transition-all ${
+                  locale === 'es'
+                    ? 'bg-primary text-white shadow-sm'
+                    : 'text-slate-400 hover:bg-white hover:shadow-sm hover:text-primary'
+                }`}
+                title="Español"
+              >
+                ES
+              </Link>
+              <Link
+                href={getLocalizedPath('en')}
+                prefetch={true}
+                className={`px-2.5 py-1 text-[10px] font-bold rounded uppercase tracking-wider transition-all ${
+                  locale === 'en'
+                    ? 'bg-primary text-white shadow-sm'
+                    : 'text-slate-400 hover:bg-white hover:shadow-sm hover:text-primary'
+                }`}
+                title="English"
+              >
+                EN
+              </Link>
+              <Link
+                href={getLocalizedPath('pt')}
+                prefetch={true}
+                className={`px-2.5 py-1 text-[10px] font-bold rounded uppercase tracking-wider transition-all ${
+                  locale === 'pt'
+                    ? 'bg-primary text-white shadow-sm'
+                    : 'text-slate-400 hover:bg-white hover:shadow-sm hover:text-primary'
+                }`}
+                title="Português"
+              >
+                PT
+              </Link>
+            </div>
+            <div className="ml-3 text-primary">
+              <span className="material-icons text-lg">language</span>
+            </div>
           </div>
-          
-          <button className="lg:hidden text-slate-600">
-            <span className="material-icons">menu</span>
-          </button>
         </div>
       </div>
     </header>
