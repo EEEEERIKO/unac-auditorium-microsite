@@ -197,5 +197,64 @@
       "subtitle": "Entre em contato com nossa equipe executiva para disponibilidade e planejamento personalizado.",
       "button": "Solicitar uma Cotação Personalizada"
     }
+  },
+  "gallery": {
+    "title": "Galeria Institucional",
+    "description": "Explore nossas instalações de classe mundial projetadas para eventos acadêmicos de alto perfil, conferências internacionais e apresentações culturais.",
+    "filters": {
+      "all": "Todas as Visualizações",
+      "architecture": "Arquitetura",
+      "events": "Eventos e Cerimônias",
+      "setups": "Configurações",
+      "exteriors": "Exteriores"
+    },
+    "items": {
+      "mainHall": {
+        "category": "Arquitetura",
+        "title": "Salão Principal - Capacidade 500",
+        "description": "Salão grande otimizado acusticamente com assentos premium em degraus."
+      },
+      "symposia": {
+        "category": "Eventos",
+        "title": "Simpósios Internacionais",
+        "description": "Suporte audiovisual de última geração para palestrantes globais."
+      },
+      "plaza": {
+        "category": "Exteriores",
+        "title": "Entrada Principal da Praça",
+        "description": ""
+      },
+      "keynote": {
+        "category": "Configurações",
+        "title": "Configuração Keynote",
+        "description": ""
+      },
+      "banquets": {
+        "category": "Configurações",
+        "title": "Banquetes Institucionais",
+        "description": "Espaço versátil para refeições formais e networking."
+      },
+      "seating": {
+        "category": "Arquitetura",
+        "title": "Design Ergonômico",
+        "description": "Materiais premium garantindo conforto para sessões prolongadas."
+      },
+      "evening": {
+        "category": "Exteriores",
+        "title": "Grandiosidade Noturna",
+        "description": ""
+      },
+      "technology": {
+        "category": "Tecnologia",
+        "title": "Suite AV Avançada",
+        "description": ""
+      }
+    },
+    "cta": {
+      "title": "Sediar Seu Próximo Evento Conosco",
+      "description": "Experimente a perfeita mistura de prestígio institucional e tecnologia moderna para os marcos mais importantes de sua universidade.",
+      "button1": "Baixar Especificações do Local",
+      "button2": "Agendar uma Visita Privada"
+    }
   }
 }

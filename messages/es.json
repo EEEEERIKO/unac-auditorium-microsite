@@ -197,5 +197,64 @@
       "subtitle": "Contacta a nuestro equipo ejecutivo para disponibilidad y planificación personalizada.",
       "button": "Solicitar una Cotización Personalizada"
     }
+  },
+  "gallery": {
+    "title": "Galería Institucional",
+    "description": "Explora nuestras instalaciones de clase mundial diseñadas para eventos académicos de alto perfil, conferencias internacionales y actuaciones culturales.",
+    "filters": {
+      "all": "Todas las Vistas",
+      "architecture": "Arquitectura",
+      "events": "Eventos y Ceremonias",
+      "setups": "Configuraciones",
+      "exteriors": "Exteriores"
+    },
+    "items": {
+      "mainHall": {
+        "category": "Arquitectura",
+        "title": "Salón Principal - 500 Capacidad",
+        "description": "Salón grande acústicamente optimizado con asientos premium en gradas."
+      },
+      "symposia": {
+        "category": "Eventos",
+        "title": "Simposios Internacionales",
+        "description": "Soporte audiovisual de última generación para oradores globales."
+      },
+      "plaza": {
+        "category": "Exteriores",
+        "title": "Entrada Principal Plaza",
+        "description": ""
+      },
+      "keynote": {
+        "category": "Configuraciones",
+        "title": "Configuración de Conferencia Magistral",
+        "description": ""
+      },
+      "banquets": {
+        "category": "Configuraciones",
+        "title": "Banquetes Institucionales",
+        "description": "Espacio de piso versátil para cenas formales y networking."
+      },
+      "seating": {
+        "category": "Arquitectura",
+        "title": "Diseño Ergonómico",
+        "description": "Materiales premium asegurando comodidad para sesiones extendidas."
+      },
+      "evening": {
+        "category": "Exteriores",
+        "title": "Grandiosidad Nocturna",
+        "description": ""
+      },
+      "technology": {
+        "category": "Tecnología",
+        "title": "Suite AV Avanzada",
+        "description": ""
+      }
+    },
+    "cta": {
+      "title": "Aloja tu Próximo Evento Con Nosotros",
+      "description": "Experimenta la combinación perfecta de prestigio institucional y tecnología moderna para los hitos más importantes de tu universidad.",
+      "button1": "Descargar Especificaciones de Lugar",
+      "button2": "Programar una Visita Privada"
+    }
   }
 }
