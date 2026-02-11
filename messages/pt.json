@@ -1,0 +1,142 @@
+{
+  "common": {
+    "nav": {
+      "home": "Início",
+      "auditorium": "Auditório",
+      "services": "Serviços",
+      "gallery": "Galeria",
+      "quote": "Orçamento"
+    },
+    "footer": {
+      "about": "Auditório GW Chapman",
+      "address": "Universidad Adventista de Colombia",
+      "rights": "© 2024 Universidad Adventista de Colombia. Todos os direitos reservados."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Excelência Institucional",
+      "title": "Auditório GW Chapman",
+      "subtitle": "Um espaço de vanguarda projetado para a difusão do conhecimento, da arte e do protocolo institucional na Universidad Adventista de Colombia.",
+      "cta1": "Solicitar Orçamento",
+      "cta2": "Conhecer o Espaço"
+    },
+    "legacy": {
+      "title": "Um Legado de Compromisso Acadêmico",
+      "description": "O Auditório GW Chapman da UNAC não é apenas um espaço físico, é o coração da vida acadêmica e cultural de nossa instituição. Equipado com tecnologia de última geração, oferece o ambiente perfeito para reflexão, celebração e troca de ideias que transformam o futuro."
+    },
+    "events": {
+      "badge": "Versatilidade Institucional",
+      "title": "Eventos Suportados",
+      "description": "Espaços adaptáveis para cada necessidade corporativa e acadêmica, garantindo o sucesso do seu evento.",
+      "conference": {
+        "title": "Conferências",
+        "description": "Fóruns acadêmicos, seminários internacionais e palestras magistrais com suporte técnico especializado.",
+        "link": "Ver Detalhes"
+      },
+      "concert": {
+        "title": "Concertos",
+        "description": "Acústica excepcional para apresentações musicais, coros e conjuntos instrumentais de alto nível.",
+        "link": "Ver Detalhes"
+      },
+      "graduation": {
+        "title": "Formaturas",
+        "description": "Cerimônias solenes com protocolo institucional completo e gestão de convidados VIP.",
+        "link": "Ver Detalhes"
+      }
+    },
+    "infrastructure": {
+      "title": "Infraestrutura de Classe Mundial",
+      "location": {
+        "title": "Localização Privilegiada",
+        "description": "Acessibilidade central dentro do campus universitário com amplas áreas de estacionamento e segurança privada."
+      },
+      "capacity": {
+        "title": "Capacidade e Conforto",
+        "description": "Assentos ergonômicos para 800 pessoas, áreas VIP dedicadas e sistemas de climatização inteligente."
+      },
+      "technical": {
+        "title": "Suporte Técnico Especializado",
+        "description": "Sistemas audiovisuais integrados, telas LED de alta definição e pessoal técnico no local."
+      }
+    },
+    "map": {
+      "title": "Como Chegar?",
+      "address": "Carrera 84 #33AA-01, Campus UNAC. Medellín, Colômbia.",
+      "link": "Abrir no Google Maps"
+    }
+  },
+  "auditorium": {
+    "title": "Nosso Auditório",
+    "description": "Conheça as características e capacidades de nossas instalações",
+    "badge": "Espaço Institucional",
+    "mainTitle": "Auditório GW Chapman: Um Espaço de Excelência Institucional",
+    "mainDescription": "O epicentro da vida acadêmica e cultural da UNAC. Um recinto projetado para abrigar os momentos mais significativos de nossa comunidade, combinando tradição, arquitetura de ponta e tecnologia de última geração.",
+    "gallery": {
+      "stage": "Palco Principal",
+      "seating": "Acomodação Confortável",
+      "lobby": "Saguão e Foyer"
+    },
+    "virtualTour": {
+      "title": "Imersão Completa em 360°",
+      "description": "Experiencie o Auditório GW Chapman como se estivesse lá. Nossa ferramenta de passeio virtual permite que executivos e organizadores explorem cada canto do local, desde a acústica do palco até a visibilidade das fileiras traseiras.",
+      "feature1": "Visualização de ângulos de câmera para transmissão.",
+      "feature2": "Exploração de acessos e saídas de emergência.",
+      "feature3": "Medição visual de espaços para estandes e registro.",
+      "button": "Explorar Auditório em 360°"
+    },
+    "specs": {
+      "title": "Especificações Técnicas",
+      "capacity": {
+        "title": "Capacidade e Conforto",
+        "description": "Otimizado para eventos em larga escala com conforto garantido.",
+        "item1": "500+ Assentos ergonômicos",
+        "item2": "Espaços para mobilidade reduzida",
+        "item3": "Saídas de emergência certificadas"
+      },
+      "location": {
+        "title": "Localização Estratégica",
+        "description": "Localizado no coração do campus principal da UNAC.",
+        "item1": "Campus Central UNAC",
+        "item2": "Medellín, Colômbia",
+        "item3": "Estacionamento supervisionado"
+      },
+      "technology": {
+        "title": "Tecnologia e Acústica",
+        "description": "Equipamento de nível internacional para produções de alta fidelidade.",
+        "item1": "Som Surround Line Array",
+        "item2": "Projeção HD 4K",
+        "item3": "Iluminação DMX programável"
+      }
+    },
+    "location": {
+      "title": "Como Chegar",
+      "description": "Visite-nos nas instalações da Corporación Universitaria Adventista."
+    }
+  },
+  "services": {
+    "title": "Serviços",
+    "description": "Oferecemos uma ampla gama de serviços para tornar seu evento bem-sucedido"
+  },
+  "gallery": {
+    "title": "Galeria",
+    "description": "Visualize nossas instalações e eventos anteriores"
+  },
+  "quote": {
+    "title": "Solicitar Orçamento",
+    "description": "Preencha o formulário para receber um orçamento personalizado",
+    "form": {
+      "eventType": "Tipo de evento",
+      "tentativeDate": "Data tentativa",
+      "attendees": "Número de participantes",
+      "duration": "Duração (horas)",
+      "services": "Serviços necessários",
+      "name": "Nome completo",
+      "email": "Endereço de e-mail",
+      "phone": "Número de telefone",
+      "submit": "Enviar solicitação",
+      "success": "Solicitação enviada com sucesso",
+      "error": "Erro ao enviar a solicitação"
+    }
+  }
+}

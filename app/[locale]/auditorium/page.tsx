@@ -1,0 +1,208 @@
+'use client';
+
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
+
+export default function AuditoriumPage() {
+  const t = useTranslations('auditorium');
+  const locale = useLocale();
+
+  return (
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative pt-20 pb-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <span className="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">
+            {t('badge')}
+          </span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-tight mb-8">
+            {t('mainTitle').split('de').map((part, i) => (
+              i === 0 ? (
+                <span key={i}>{part.trim()} de</span>
+              ) : (
+                <span key={i}><span className="text-primary"> Excelencia Institucional</span></span>
+              )
+            ))}
+          </h1>
+          <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto">
+            {t('mainDescription')}
+          </p>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="px-6 mb-24">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="group relative overflow-hidden rounded-xl h-80 bg-slate-200">
+            <img
+              alt={t('gallery.stage')}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJoU2PCFzKXB3zPDCJvuzz8wxlZvPYKxcFPuEn30OrETqy7izZGi-YQbYj79VgG-l0C9HsvEi2SPTPR2qPjW0opVYx-aBqnHcmNstuld4Atd0T4gPj52KoGSZ64WlOnmlqZQM-voWYuamqIkhqzF8HHH4pCp7sB1MEzUCobImNjDjqnga4soB5JGe-B3CYEw_a7EwQyNApEedQ696luD2zzNAEzuNv2B6HRoxb1wrLkGymEFioMzjfcjTjJVKKrL2NOQ0Wo81gFBSo"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
+              <span className="text-white font-medium">{t('gallery.stage')}</span>
+            </div>
+          </div>
+
+          <div className="group relative overflow-hidden rounded-xl h-80 bg-slate-200">
+            <img
+              alt={t('gallery.seating')}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDHNl7Fx5nAuZ9pzFUNRlSPX2KKAiWezhRzQEk8ipb9hssY920uN-b8R-bhipDKOAiIcv0FdA84IfJHv8VVNAxvWNLzW_AfMV-7F0gd_sqVQjjDw_ER-b0iao8XpIT7oYnBkWvtkzYG4kvVJGvgLvhTBVBsP2QjrT2Ql-PCdB7jD1WwOgmdXKYEQsA0Ge_xdggJ0qLT-M9zXKtjD4z8DobnVpaflEbrgZi8rM262fuTrQ0W9hQTIkv7KPCWPsoSea20o5UvYRmT6K5"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
+              <span className="text-white font-medium">{t('gallery.seating')}</span>
+            </div>
+          </div>
+
+          <div className="group relative overflow-hidden rounded-xl h-80 bg-slate-200">
+            <img
+              alt={t('gallery.lobby')}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIGoL0eRkebwF6osc9OxLS9FnxaQGgqiCra1G3fMDrKUOMh6HKeHksOIJv05bk1D_sLvTAIYVgqakwKMSmhQTjO4_rn_qWxOwe6-JzzEzhRo0KtrtHPJxW5Y59WoTVzUwLMgPMQXeKto3IAJ37aguZO7hhzI_TtA_23NwaL9yMBbTbmY3U5jo4ZDl28vlZROmLwVezGF5N155gpsKPz6NAw-UiIV2P9pEjgQC3Q1nx93EQRMujYrxYHe4VO0UAGjm-7lcGMsXr4hDH"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
+              <span className="text-white font-medium">{t('gallery.lobby')}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Virtual Tour Section */}
+      <section className="bg-white dark:bg-slate-900 py-24 px-6 border-y border-primary/5">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="w-full lg:w-1/2 space-y-6">
+              <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+                {t('virtualTour.title')}
+              </h2>
+              <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                {t('virtualTour.description')}
+              </p>
+              <div className="space-y-4 pt-4">
+                <div className="flex items-start gap-4">
+                  <span className="material-icons text-primary flex-shrink-0">check_circle</span>
+                  <p className="text-sm text-slate-700 dark:text-slate-300">
+                    {t('virtualTour.feature1')}
+                  </p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="material-icons text-primary flex-shrink-0">check_circle</span>
+                  <p className="text-sm text-slate-700 dark:text-slate-300">
+                    {t('virtualTour.feature2')}
+                  </p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="material-icons text-primary flex-shrink-0">check_circle</span>
+                  <p className="text-sm text-slate-700 dark:text-slate-300">
+                    {t('virtualTour.feature3')}
+                  </p>
+                </div>
+              </div>
+              <button className="mt-8 flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-xl font-bold hover:shadow-xl hover:shadow-primary/20 transition-all group">
+                <span className="material-icons group-hover:rotate-12 transition-transform">360</span>
+                {t('virtualTour.button')}
+              </button>
+            </div>
+
+            <div className="w-full lg:w-1/2 aspect-video bg-slate-800 rounded-2xl relative overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800">
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-900/40 text-white z-10 backdrop-blur-[2px]">
+                <span className="material-icons text-6xl mb-4 animate-pulse">view_in_ar</span>
+                <p className="font-medium text-lg">Cargando Recorrido Virtual...</p>
+              </div>
+              <img
+                alt="Vista 360 Previa"
+                className="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA34ahcvclZKljFD51PglDUJtlguTFF3DhammuSxZOjjRixW3VcTLomcwWU7AdyXwr9TPeVSwh1pgKrklmREGkDiyqg68_wbQrb-7Qe5rAc6zWwsc70X9HIHdcERKEZFdt15bzhCuiy1WKGy5f6iFzjoPwlMudwEKgRxQB1RXFMnKGl5bvOHgfQ-D6ETiGf1OBPu-7u7pCMj0QsPMS9Ly9BXrzVuze9OzQD-MpdIb-GmMB-ozbi0gLGJB7zlN5K5fGgozngBjRdQuxV"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technical Specs Section */}
+      <section className="py-24 px-6 bg-background-light dark:bg-background-dark">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16 text-center">
+            <h2 className="text-3xl font-bold mb-4">{t('specs.title')}</h2>
+            <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Capacity Card */}
+            <div className="bg-white dark:bg-slate-800/50 p-8 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary/40 transition-all group">
+              <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                <span className="material-icons text-primary group-hover:text-white transition-colors">groups</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">{t('specs.capacity.title')}</h3>
+              <p className="text-slate-600 dark:text-slate-400 mb-4">{t('specs.capacity.description')}</p>
+              <ul className="text-sm space-y-2 text-slate-500 dark:text-slate-400">
+                <li>• {t('specs.capacity.item1')}</li>
+                <li>• {t('specs.capacity.item2')}</li>
+                <li>• {t('specs.capacity.item3')}</li>
+              </ul>
+            </div>
+
+            {/* Location Card */}
+            <div className="bg-white dark:bg-slate-800/50 p-8 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary/40 transition-all group">
+              <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                <span className="material-icons text-primary group-hover:text-white transition-colors">location_on</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">{t('specs.location.title')}</h3>
+              <p className="text-slate-600 dark:text-slate-400 mb-4">{t('specs.location.description')}</p>
+              <ul className="text-sm space-y-2 text-slate-500 dark:text-slate-400">
+                <li>• {t('specs.location.item1')}</li>
+                <li>• {t('specs.location.item2')}</li>
+                <li>• {t('specs.location.item3')}</li>
+              </ul>
+            </div>
+
+            {/* Technology Card */}
+            <div className="bg-white dark:bg-slate-800/50 p-8 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary/40 transition-all group">
+              <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                <span className="material-icons text-primary group-hover:text-white transition-colors">settings_input_component</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">{t('specs.technology.title')}</h3>
+              <p className="text-slate-600 dark:text-slate-400 mb-4">{t('specs.technology.description')}</p>
+              <ul className="text-sm space-y-2 text-slate-500 dark:text-slate-400">
+                <li>• {t('specs.technology.item1')}</li>
+                <li>• {t('specs.technology.item2')}</li>
+                <li>• {t('specs.technology.item3')}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location Section */}
+      <section className="py-24 px-6 bg-white dark:bg-slate-900">
+        <div className="max-w-7xl mx-auto flex flex-col items-center">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">{t('location.title')}</h2>
+            <p className="text-slate-600 dark:text-slate-400">{t('location.description')}</p>
+          </div>
+
+          <div className="w-full h-96 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-xl relative">
+            <div className="absolute inset-0 bg-slate-100 dark:bg-slate-800 flex items-center justify-center z-10">
+              <div className="text-center">
+                <span className="material-icons text-primary text-5xl mb-2">map</span>
+                <p className="text-slate-500 font-medium">Mapa de Ubicación Interactivo</p>
+              </div>
+            </div>
+            <img
+              alt="Mapa de Medellín"
+              className="w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqUTTt4Ej_vAYirPeHn8Tx_is5vVtBhp3Vs805mWd4b61sUbJgZQmBJE6YvN6KDQUmwfUV6-J6-zZhK1urAuKktMNzgB2tIyC6BRGxwjnc-abGHQXFI26kSN3REml5gRBWKsrGlYGi6s-S42L2JeSgWfvAnezjx2yY1xIs30LOHahhWUk4K24esbiFRox027C_jyVZbMHYpKDeMsmq9kDOhERRz6ajAhMC7Qn__GjKCp_K9nGC6qGLWnSgnKu96wnBT0Y61xDb8knZ"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

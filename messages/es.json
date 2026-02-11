@@ -1,0 +1,142 @@
+{
+  "common": {
+    "nav": {
+      "home": "Inicio",
+      "auditorium": "Auditorio",
+      "services": "Servicios",
+      "gallery": "Galería",
+      "quote": "Cotizar"
+    },
+    "footer": {
+      "about": "Auditorio GW Chapman",
+      "address": "Universidad Adventista de Colombia",
+      "rights": "© 2024 Universidad Adventista de Colombia. Todos los derechos reservados."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Excelencia Institucional",
+      "title": "Auditorio GW Chapman",
+      "subtitle": "Un espacio de vanguardia diseñado para la difusión del conocimiento, el arte y el protocolo institucional en la Universidad Adventista de Colombia.",
+      "cta1": "Solicitar Cotización",
+      "cta2": "Conocer el Espacio"
+    },
+    "legacy": {
+      "title": "Un Legado de Compromiso Académico",
+      "description": "El Auditorio GW Chapman de la UNAC no es solo un espacio físico, es el corazón de la vida académica y cultural de nuestra institución. Equipado con tecnología de última generación, ofrece el ambiente perfecto para la reflexión, la celebración y el intercambio de ideas que transforman el futuro."
+    },
+    "events": {
+      "badge": "Versatilidad Institucional",
+      "title": "Eventos Soportados",
+      "description": "Espacios adaptables para cada necesidad corporativa y académica, garantizando el éxito de su convocatoria.",
+      "conference": {
+        "title": "Conferencias",
+        "description": "Foros académicos, seminarios internacionales y ponencias magistrales con soporte técnico especializado.",
+        "link": "Ver Detalles"
+      },
+      "concert": {
+        "title": "Conciertos",
+        "description": "Acústica excepcional para presentaciones musicales, coros y ensambles instrumentales de alto nivel.",
+        "link": "Ver Detalles"
+      },
+      "graduation": {
+        "title": "Graduaciones",
+        "description": "Ceremonias solemnes con protocolo institucional completo y gestión de invitados VIP.",
+        "link": "Ver Detalles"
+      }
+    },
+    "infrastructure": {
+      "title": "Infraestructura de Clase Mundial",
+      "location": {
+        "title": "Ubicación Privilegiada",
+        "description": "Accesibilidad central dentro del campus universitario con amplias zonas de parqueo y seguridad privada."
+      },
+      "capacity": {
+        "title": "Capacidad y Confort",
+        "description": "Silletería ergonómica para 800 personas, áreas VIP dedicadas y sistemas de climatización inteligente."
+      },
+      "technical": {
+        "title": "Soporte Técnico Especializado",
+        "description": "Sistemas audiovisuales integrados, pantallas LED de alta definición y personal técnico en sitio."
+      }
+    },
+    "map": {
+      "title": "¿Cómo llegar?",
+      "address": "Carrera 84 #33AA-01, Campus UNAC. Medellín, Colombia.",
+      "link": "Abrir en Google Maps"
+    }
+  },
+  "auditorium": {
+    "title": "Nuestro Auditorio",
+    "description": "Descubra las características y capacidades de nuestras instalaciones",
+    "badge": "Espacio Institucional",
+    "mainTitle": "Auditorio GW Chapman: Un Espacio de Excelencia Institucional",
+    "mainDescription": "El epicentro de la vida académica y cultural de la UNAC. Un recinto diseñado para albergar los momentos más significativos de nuestra comunidad, combinando tradición, arquitectura de vanguardia y tecnología de punta.",
+    "gallery": {
+      "stage": "Escenario Principal",
+      "seating": "Silletería de Confort",
+      "lobby": "Lobby y Foyer"
+    },
+    "virtualTour": {
+      "title": "Inmersión Total en 360°",
+      "description": "Experimente el Auditorio GW Chapman como si estuviera allí. Nuestra herramienta de recorrido virtual permite a los directivos y organizadores explorar cada rincón del recinto, desde la acústica del escenario hasta la visibilidad desde las filas traseras.",
+      "feature1": "Visualización de ángulos de cámara para streaming.",
+      "feature2": "Exploración de accesos y salidas de emergencia.",
+      "feature3": "Medición visual de espacios para stands y registro.",
+      "button": "Explorar Auditorio en 360°"
+    },
+    "specs": {
+      "title": "Especificaciones Técnicas",
+      "capacity": {
+        "title": "Aforo y Capacidad",
+        "description": "Optimizado para eventos de gran escala con comodidad garantizada.",
+        "item1": "500+ Asientos ergonómicos",
+        "item2": "Espacios para movilidad reducida",
+        "item3": "Salidas de evacuación certificadas"
+      },
+      "location": {
+        "title": "Ubicación Estratégica",
+        "description": "Ubicado en el corazón del campus principal de la UNAC.",
+        "item1": "Campus Central UNAC",
+        "item2": "Medellín, Colombia",
+        "item3": "Parqueadero vigilado"
+      },
+      "technology": {
+        "title": "Tecnología y Acústica",
+        "description": "Equipamiento de nivel internacional para producciones de alta fidelidad.",
+        "item1": "Sonido Surround Line Array",
+        "item2": "Proyección HD 4K",
+        "item3": "Iluminación DMX programable"
+      }
+    },
+    "location": {
+      "title": "Cómo Llegar",
+      "description": "Visítenos en las instalaciones de la Corporación Universitaria Adventista."
+    }
+  },
+  "services": {
+    "title": "Servicios",
+    "description": "Ofrecemos una amplia gama de servicios para hacer su evento exitoso"
+  },
+  "gallery": {
+    "title": "Galería",
+    "description": "Visualice nuestras instalaciones y eventos anteriores"
+  },
+  "quote": {
+    "title": "Solicitar Cotización",
+    "description": "Complete el formulario para recibir una cotización personalizada",
+    "form": {
+      "eventType": "Tipo de evento",
+      "tentativeDate": "Fecha tentativa",
+      "attendees": "Número de asistentes",
+      "duration": "Duración (horas)",
+      "services": "Servicios requeridos",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "submit": "Enviar solicitud",
+      "success": "Solicitud enviada exitosamente",
+      "error": "Error al enviar la solicitud"
+    }
+  }
+}
