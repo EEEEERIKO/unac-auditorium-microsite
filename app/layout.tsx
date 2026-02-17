@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Auditorio GW Chapman - UNAC",
   description: "Auditorio institucional de clase mundial para eventos académicos, conferencias y ceremonias.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
     apple: "/apple-icon.png",
   },
 };

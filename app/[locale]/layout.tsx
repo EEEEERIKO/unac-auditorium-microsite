@@ -27,8 +27,8 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning className="light">
       <head>
-        <link rel="icon" href="/favicon.ico?v=2" sizes="any" type="image/png" />
-        <link rel="shortcut icon" href="/favicon.ico?v=2" type="image/png" />
+        <link rel="icon" href="/favicon.png?v=3" sizes="any" type="image/png" />
+        <link rel="shortcut icon" href="/favicon.png?v=3" type="image/png" />
         <link rel="apple-touch-icon" href="/logo-unac.png?v=2" />
         <meta name="theme-color" content="#295787" />
         <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
