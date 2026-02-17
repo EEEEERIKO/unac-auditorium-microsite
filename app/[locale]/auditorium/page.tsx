@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
+import { MapWithPin } from '@/components/MapWithPin';
 
 export default function AuditoriumPage() {
   const t = useTranslations('auditorium');
@@ -181,25 +182,14 @@ export default function AuditoriumPage() {
 
       {/* Location Section */}
       <section className="py-24 px-6 bg-white dark:bg-slate-900">
-        <div className="max-w-7xl mx-auto flex flex-col items-center">
-          <div className="text-center mb-12">
+        <div className="max-w-7xl mx-auto w-full flex flex-col items-center">
+          <div className="text-center mb-12 w-full">
             <h2 className="text-3xl font-bold mb-4">{t('location.title')}</h2>
             <p className="text-slate-600 dark:text-slate-400">{t('location.description')}</p>
           </div>
 
-          <div className="w-full h-96 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-xl relative">
-            <div className="absolute inset-0 bg-slate-100 dark:bg-slate-800 flex items-center justify-center z-10">
-              <div className="text-center">
-                <span className="material-icons text-primary text-5xl mb-2">map</span>
-                <p className="text-slate-500 font-medium">Mapa de Ubicación Interactivo</p>
-              </div>
-            </div>
-            <img
-              alt="Mapa de Medellín"
-              className="w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqUTTt4Ej_vAYirPeHn8Tx_is5vVtBhp3Vs805mWd4b61sUbJgZQmBJE6YvN6KDQUmwfUV6-J6-zZhK1urAuKktMNzgB2tIyC6BRGxwjnc-abGHQXFI26kSN3REml5gRBWKsrGlYGi6s-S42L2JeSgWfvAnezjx2yY1xIs30LOHahhWUk4K24esbiFRox027C_jyVZbMHYpKDeMsmq9kDOhERRz6ajAhMC7Qn__GjKCp_K9nGC6qGLWnSgnKu96wnBT0Y61xDb8knZ"
-              loading="lazy"
-            />
+          <div className="w-full">
+            <MapWithPin />
           </div>
         </div>
       </section>

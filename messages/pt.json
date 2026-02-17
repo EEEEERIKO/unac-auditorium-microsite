@@ -9,8 +9,26 @@
     },
     "footer": {
       "about": "Auditório GW Chapman",
-      "address": "Universidad Adventista de Colombia",
-      "rights": "© 2024 Universidad Adventista de Colombia. Todos os direitos reservados."
+      "address": "Universidade Adventista da Colômbia",
+      "rights": "© 2024 Universidade Adventista da Colômbia. Todos os direitos reservados.",
+      "description": "Universidade Adventista da Colômbia - Educando para a Eternidade. Auditório G.W Chapman é nossa janela para o mundo acadêmico.",
+      "navigation": {
+        "title": "Navegação",
+        "about": "Sobre o Auditório",
+        "services": "Serviços Técnicos",
+        "events": "Calendário de Eventos",
+        "pricing": "Taxas Corporativas"
+      },
+      "contact": {
+        "title": "Contato Direto",
+        "phone": "+57 (4) 250 8328",
+        "email": "auditorio@unac.edu.co",
+        "schedule": "Seg - Sex: 08:00 - 18:00"
+      },
+      "certifications": {
+        "title": "Certificações"
+      },
+      "copyright": "© 2026 Universidade Adventista da Colômbia. Todos os direitos reservados."
     }
   },
   "home": {
@@ -24,8 +42,19 @@
     "legacy": {
       "title": "Um Legado de Compromisso Acadêmico",
       "description": "O Auditório GW Chapman da UNAC não é apenas um espaço físico, é o coração da vida acadêmica e cultural de nossa instituição. Equipado com tecnologia de última geração, oferece o ambiente perfeito para reflexão, celebração e troca de ideias que transformam o futuro."
-    },
-    "events": {
+    },    "cta": {
+      "badge": "RESERVE SEU EVENTO AGORA",
+      "title": "Transforme Seu Evento em uma",
+      "titleHighlight": "Experiência Memorável",
+      "description": "O Auditório G.W Chapman conta com a tecnologia mais avançada, capacidade para 600+ participantes e uma equipe profissional pronta para tornar seu evento extraordinário.",
+      "benefits": {
+        "tech": "Tecnologia 4K",
+        "capacity": "600+ Pessoas",
+        "support": "Suporte 24/7"
+      },
+      "buttonText": "Cotar Seu Evento Hoje",
+      "footer": "Resposta Rápida • Sem Compromisso • Orçamento Personalizado"
+    },    "events": {
       "badge": "Versatilidade Institucional",
       "title": "Eventos Suportados",
       "description": "Espaços adaptáveis para cada necessidade corporativa e acadêmica, garantindo o sucesso do seu evento.",
@@ -256,5 +285,46 @@
       "button1": "Baixar Especificações do Local",
       "button2": "Agendar uma Visita Privada"
     }
+  },
+  "quote": {
+    "title": "Solicitar Cotação",
+    "description": "Preencha o formulário abaixo para receber uma proposta personalizada para seu evento executivo.",
+    "eventDetails": {
+      "title": "Detalhes do Evento",
+      "eventType": "Tipo de Evento",
+      "eventTypeOptions": {
+        "conference": "Conferência Acadêmica",
+        "gala": "Gala Institucional",
+        "workshop": "Oficina/Seminário",
+        "graduation": "Cerimônia de Formatura",
+        "meeting": "Reunião de Conselho"
+      },
+      "tentativeDate": "Data Tentativa",
+      "attendees": "Número de Participantes",
+      "attendeesMax": "Máx 600",
+      "duration": "Duração (Horas)",
+      "durationPlaceholder": "2"
+    },
+    "technicalRequirements": {
+      "title": "Requisitos Técnicos",
+      "sound": "Som Profissional",
+      "lighting": "Iluminação de Palco",
+      "streaming": "Transmissão ao Vivo",
+      "projection": "Projeção (4K)",
+      "recording": "Gravação de Vídeo",
+      "itSupport": "Suporte de TI"
+    },
+    "contactRepresentative": {
+      "title": "Representante de Contato",
+      "fullName": "Nome Completo",
+      "fullNamePlaceholder": "Dra. Jane Doe",
+      "email": "Email Institucional",
+      "emailPlaceholder": "example@unac.edu.co",
+      "phone": "Telefone / Ramal",
+      "phonePlaceholder": "+57 --- --- ----"
+    },
+    "submit": "Enviar Solicitação de Cotação",
+    "confidential": "Suas informações são tratadas com confidencialidade institucional",
+    "officialVenue": "Local Oficial UNAC"
   }
 }

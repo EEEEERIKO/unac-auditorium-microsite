@@ -127,29 +127,61 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mapa / Ubicación */}
-      <section className="relative h-[400px]">
-        <img
-          alt="Ubicación UNAC"
-          className="w-full h-full object-cover"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRLMQjBD_d6ACKtKRk8awpXvULOxCx0XviBhlO8-d0eF0sazjVhSoeWvL50BaQ59HIxlD0hUPmkNzY0yFP14M3cqaIR3mdoN5-IOiqhXOTlMKlWPzHkJSagCl9t9Ej8SCqe-bnJKqIx6h3NvnEPThZ68xTyf5AriYxILvNnFUxBmF9GNl1A1lO2g86QFFaglAhJQbVl773hG7LRljYAhxcAVQxQRPhSLJtZj6r1T4gANl2OfBd2fvJyE0zaRmtijMEYpuKexUEJqEw"
-        />
-        <div className="absolute inset-0 bg-primary/20 backdrop-blur-[2px] flex items-center justify-center">
-          <div className="bg-white dark:bg-background-dark p-8 rounded-xl shadow-2xl max-w-sm text-center">
-            <span className="material-icons text-primary text-5xl mb-4">place</span>
-            <h4 className="text-xl font-bold mb-2">{t('map.title')}</h4>
-            <p className="text-slate-600 dark:text-slate-400 mb-6 text-sm">
-              {t('map.address')}
-            </p>
-            <a
-              className="text-primary font-bold hover:underline"
-              href="https://maps.google.com/?q=Universidad+Adventista+de+Colombia"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('map.link')}
-            </a>
+      {/* CTA Section - Cotización */}
+      <section className="relative py-24 px-6 bg-gradient-to-r from-primary to-blue-800 overflow-hidden">
+        {/* Fondo decorativo */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          {/* Badge */}
+          <div className="flex justify-center mb-6">
+            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full px-6 py-2">
+              <span className="material-icons-outlined text-white text-lg">event</span>
+              <span className="text-white text-sm font-semibold">{t('cta.badge')}</span>
+            </div>
           </div>
+
+          {/* Título Principal */}
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            {t('cta.title')} <span className="text-yellow-300">{t('cta.titleHighlight')}</span>
+          </h2>
+
+          {/* Descripción */}
+          <p className="text-lg text-white/90 mb-4 max-w-2xl mx-auto leading-relaxed">
+            {t('cta.description')}
+          </p>
+
+          {/* Beneficios rápidos */}
+          <div className="grid md:grid-cols-3 gap-4 mb-12 max-w-2xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
+              <span className="material-icons text-yellow-300 text-3xl block mb-2">check_circle</span>
+              <p className="text-white text-sm font-semibold">{t('cta.benefits.tech')}</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
+              <span className="material-icons text-yellow-300 text-3xl block mb-2">group</span>
+              <p className="text-white text-sm font-semibold">{t('cta.benefits.capacity')}</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
+              <span className="material-icons text-yellow-300 text-3xl block mb-2">support_agent</span>
+              <p className="text-white text-sm font-semibold">{t('cta.benefits.support')}</p>
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          <Link
+            href={`/${locale}/quote`}
+            className="inline-block bg-yellow-400 hover:bg-yellow-300 text-slate-900 font-bold py-4 px-12 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl"
+          >
+            {t('cta.buttonText')}
+          </Link>
+
+          {/* Texto secundario */}
+          <p className="text-white/70 text-sm mt-8">
+            {t('cta.footer')}
+          </p>
         </div>
       </section>
     </div>

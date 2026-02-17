@@ -9,8 +9,26 @@
     },
     "footer": {
       "about": "GW Chapman Auditorium",
-      "address": "Universidad Adventista de Colombia",
-      "rights": "© 2024 Universidad Adventista de Colombia. All rights reserved."
+      "address": "Adventist University of Colombia",
+      "rights": "© 2024 Adventist University of Colombia. All rights reserved.",
+      "description": "Adventist University of Colombia - Educating for Eternity. G.W Chapman Auditorium is our window to the academic world.",
+      "navigation": {
+        "title": "Navigation",
+        "about": "About the Auditorium",
+        "services": "Technical Services",
+        "events": "Event Calendar",
+        "pricing": "Corporate Rates"
+      },
+      "contact": {
+        "title": "Direct Contact",
+        "phone": "+57 (4) 250 8328",
+        "email": "auditorium@unac.edu.co",
+        "schedule": "Mon - Fri: 08:00 - 18:00"
+      },
+      "certifications": {
+        "title": "Certifications"
+      },
+      "copyright": "© 2026 Adventist University of Colombia. All rights reserved."
     }
   },
   "home": {
@@ -24,8 +42,19 @@
     "legacy": {
       "title": "A Legacy of Academic Commitment",
       "description": "The UNAC GW Chapman Auditorium is not just a physical space, it is the heart of the academic and cultural life of our institution. Equipped with state-of-the-art technology, it offers the perfect environment for reflection, celebration, and the exchange of ideas that transform the future."
-    },
-    "events": {
+    },    "cta": {
+      "badge": "BOOK YOUR EVENT NOW",
+      "title": "Transform Your Event into a",
+      "titleHighlight": "Memorable Experience",
+      "description": "The G.W Chapman Auditorium features the most advanced technology, capacity for 600+ attendees, and a professional team ready to make your event extraordinary.",
+      "benefits": {
+        "tech": "4K Technology",
+        "capacity": "600+ People",
+        "support": "24/7 Support"
+      },
+      "buttonText": "Quote Your Event Today",
+      "footer": "Quick Response • No Commitment • Personalized Budget"
+    },    "events": {
       "badge": "Institutional Versatility",
       "title": "Supported Events",
       "description": "Adaptable spaces for every corporate and academic need, ensuring the success of your gathering.",
@@ -256,5 +285,46 @@
       "button1": "Download Venue Specs",
       "button2": "Schedule a Private Tour"
     }
+  },
+  "quote": {
+    "title": "Request a Quote",
+    "description": "Complete the form below to receive a personalized proposal for your executive event.",
+    "eventDetails": {
+      "title": "Event Details",
+      "eventType": "Type of Event",
+      "eventTypeOptions": {
+        "conference": "Academic Conference",
+        "gala": "Institutional Gala",
+        "workshop": "Workshop/Seminar",
+        "graduation": "Graduation Ceremony",
+        "meeting": "Board Meeting"
+      },
+      "tentativeDate": "Tentative Date",
+      "attendees": "Number of Attendees",
+      "attendeesMax": "Max 450",
+      "duration": "Duration (Hours)",
+      "durationPlaceholder": "2"
+    },
+    "technicalRequirements": {
+      "title": "Technical Requirements",
+      "sound": "Professional Sound",
+      "lighting": "Stage Lighting",
+      "streaming": "Live Streaming",
+      "projection": "Projection (4K)",
+      "recording": "Video Recording",
+      "itSupport": "IT Support"
+    },
+    "contactRepresentative": {
+      "title": "Contact Representative",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Dr. Jane Doe",
+      "email": "Institutional Email",
+      "emailPlaceholder": "example@unac.edu.co",
+      "phone": "Phone / Extension",
+      "phonePlaceholder": "+57 --- --- ----"
+    },
+    "submit": "Send Quote Request",
+    "confidential": "Your information is handled with institutional confidentiality",
+    "officialVenue": "UNAC Official Venue"
   }
 }

@@ -4,12 +4,13 @@ import { useTransition } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 export function Navbar() {
   const t = useTranslations('common.nav');
   const locale = useLocale();
   const pathname = usePathname();
+  const router = useRouter();
   const [isPending, startTransition] = useTransition();
 
   // Remove the locale from pathname to get the base path
@@ -21,8 +22,8 @@ export function Navbar() {
 
   const handleLanguageChange = (newLocale: string) => {
     startTransition(() => {
-      // Navigate to the new locale path
-      window.location.href = getLocalizedPath(newLocale);
+      // Navigate to the new locale path without scrolling
+      router.replace(getLocalizedPath(newLocale), { scroll: false });
     });
   };
 
@@ -36,7 +37,7 @@ export function Navbar() {
               alt="Logo UNAC" 
               width={48} 
               height={48}
-              className="object-contain"
+              className="object-contain w-auto h-auto"
               priority
             />
           </div>
@@ -77,7 +78,7 @@ export function Navbar() {
               {t('gallery')}
             </Link>
             <Link
-              className={`transition-colors ${pathname.includes('/quote') ? 'text-primary font-bold' : 'text-slate-600 dark:text-slate-400 hover:text-primary'}`}
+              className={`transition-all px-4 py-2 rounded-lg font-bold ${pathname.includes('/quote') ? 'bg-primary text-white shadow-lg' : 'bg-primary/10 text-primary hover:bg-primary hover:text-white hover:shadow-lg'}`}
               href={`/${locale}/quote`}
               prefetch={true}
             >
@@ -87,10 +88,10 @@ export function Navbar() {
           
           <div className="flex items-center border-l border-slate-200 dark:border-slate-700 ml-4 pl-8">
             <div className="flex items-center gap-1.5 p-1.5 bg-slate-50 dark:bg-slate-800/50 rounded-lg border border-slate-100 dark:border-slate-800">
-              <Link
-                href={getLocalizedPath('es')}
-                prefetch={true}
-                className={`px-2.5 py-1 text-[10px] font-bold rounded uppercase tracking-wider transition-all ${
+              <button
+                onClick={() => handleLanguageChange('es')}
+                disabled={isPending}
+                className={`px-2.5 py-1 text-[10px] font-bold rounded uppercase tracking-wider transition-all cursor-pointer ${
                   locale === 'es'
                     ? 'bg-primary text-white shadow-sm'
                     : 'text-slate-400 hover:bg-white hover:shadow-sm hover:text-primary'
@@ -98,11 +99,11 @@ export function Navbar() {
                 title="Español"
               >
                 ES
-              </Link>
-              <Link
-                href={getLocalizedPath('en')}
-                prefetch={true}
-                className={`px-2.5 py-1 text-[10px] font-bold rounded uppercase tracking-wider transition-all ${
+              </button>
+              <button
+                onClick={() => handleLanguageChange('en')}
+                disabled={isPending}
+                className={`px-2.5 py-1 text-[10px] font-bold rounded uppercase tracking-wider transition-all cursor-pointer ${
                   locale === 'en'
                     ? 'bg-primary text-white shadow-sm'
                     : 'text-slate-400 hover:bg-white hover:shadow-sm hover:text-primary'
@@ -110,11 +111,11 @@ export function Navbar() {
                 title="English"
               >
                 EN
-              </Link>
-              <Link
-                href={getLocalizedPath('pt')}
-                prefetch={true}
-                className={`px-2.5 py-1 text-[10px] font-bold rounded uppercase tracking-wider transition-all ${
+              </button>
+              <button
+                onClick={() => handleLanguageChange('pt')}
+                disabled={isPending}
+                className={`px-2.5 py-1 text-[10px] font-bold rounded uppercase tracking-wider transition-all cursor-pointer ${
                   locale === 'pt'
                     ? 'bg-primary text-white shadow-sm'
                     : 'text-slate-400 hover:bg-white hover:shadow-sm hover:text-primary'
@@ -122,7 +123,7 @@ export function Navbar() {
                 title="Português"
               >
                 PT
-              </Link>
+              </button>
             </div>
             <div className="ml-3 text-primary">
               <span className="material-icons text-lg">language</span>
