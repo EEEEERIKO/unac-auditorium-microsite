@@ -84,7 +84,7 @@
       },
       "capacity": {
         "title": "Capacidad y Confort",
-        "description": "Silletería ergonómica para 800 personas, áreas VIP dedicadas y sistemas de climatización inteligente."
+        "description": "Silletería ergonómica para 600 personas, áreas VIP dedicadas y sistemas de climatización inteligente."
       },
       "technical": {
         "title": "Soporte Técnico Especializado",
@@ -219,7 +219,7 @@
     },
     "location": {
       "title": "Ubicación y Logística",
-      "description": "El Auditorio GW Chapman se encuentra estratégicamente ubicado en el Campus Principal de la UNAC (Edificio C). Acceso directo sin barreras arquitectónicas, amplias áreas de estacionamiento ejecutivo reservado, y proximidad a servicios complementarios dentro del campus para garantizar una experiencia sin inconvenientes.",
+      "description": "El Auditorio GW Chapman se encuentra estratégicamente ubicado en el Campus Principal de la UNAC - Auditorio GW Chapman. Acceso directo sin barreras arquitectónicas, amplias áreas de estacionamiento ejecutivo reservado, y proximidad a servicios complementarios dentro del campus para garantizar una experiencia sin inconvenientes.",
       "campus": "Cra. 84, Cl. 33AA #01",
       "parking": "Estacionamiento Ejecutivo Reservado - 25+ espacios de cortesía"
     },
