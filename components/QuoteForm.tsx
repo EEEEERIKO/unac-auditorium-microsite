@@ -15,6 +15,8 @@ const quoteSchema = z.object({
   duration: z.string().refine((v) => !isNaN(parseFloat(v)) && parseFloat(v) >= 1),
   services: z.array(z.string()).optional(),
   additionalNotes: z.string().optional(),
+  name: z.string().min(1, 'Name is required'),
+  email: z.string().email('Valid email is required'),
   phone: z.string().min(7, 'Phone must be at least 7 digits'),
 });
 
