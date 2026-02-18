@@ -36,38 +36,50 @@ export default function AuditoriumPage() {
       <section className="px-6 mb-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="group relative overflow-hidden rounded-xl h-80 bg-slate-200">
-            <img
-              alt={t('gallery.stage')}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJoU2PCFzKXB3zPDCJvuzz8wxlZvPYKxcFPuEn30OrETqy7izZGi-YQbYj79VgG-l0C9HsvEi2SPTPR2qPjW0opVYx-aBqnHcmNstuld4Atd0T4gPj52KoGSZ64WlOnmlqZQM-voWYuamqIkhqzF8HHH4pCp7sB1MEzUCobImNjDjqnga4soB5JGe-B3CYEw_a7EwQyNApEedQ696luD2zzNAEzuNv2B6HRoxb1wrLkGymEFioMzjfcjTjJVKKrL2NOQ0Wo81gFBSo"
-              loading="lazy"
-            />
+            <picture>
+              <source srcSet="/gallery/events-ceremonies/events-ceremonies_22.webp" type="image/webp" />
+              <source srcSet="/gallery/events-ceremonies/events-ceremonies_22.jpg" type="image/jpeg" />
+              <img
+                alt={t('gallery.internationalEvents')}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/gallery/events-ceremonies/events-ceremonies_22.jpg"
+                loading="lazy"
+              />
+            </picture>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
-              <span className="text-white font-medium">{t('gallery.stage')}</span>
+              <span className="text-white font-medium">{t('gallery.internationalEvents')}</span>
             </div>
           </div>
 
           <div className="group relative overflow-hidden rounded-xl h-80 bg-slate-200">
-            <img
-              alt={t('gallery.seating')}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDHNl7Fx5nAuZ9pzFUNRlSPX2KKAiWezhRzQEk8ipb9hssY920uN-b8R-bhipDKOAiIcv0FdA84IfJHv8VVNAxvWNLzW_AfMV-7F0gd_sqVQjjDw_ER-b0iao8XpIT7oYnBkWvtkzYG4kvVJGvgLvhTBVBsP2QjrT2Ql-PCdB7jD1WwOgmdXKYEQsA0Ge_xdggJ0qLT-M9zXKtjD4z8DobnVpaflEbrgZi8rM262fuTrQ0W9hQTIkv7KPCWPsoSea20o5UvYRmT6K5"
-              loading="lazy"
-            />
+            <picture>
+              <source srcSet="/gallery/setups/setups_02.webp" type="image/webp" />
+              <source srcSet="/gallery/setups/setups_02.jpg" type="image/jpeg" />
+              <img
+                alt={t('gallery.seating')}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/gallery/setups/setups_02.jpg"
+                loading="lazy"
+              />
+            </picture>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
               <span className="text-white font-medium">{t('gallery.seating')}</span>
             </div>
           </div>
 
           <div className="group relative overflow-hidden rounded-xl h-80 bg-slate-200">
-            <img
-              alt={t('gallery.lobby')}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIGoL0eRkebwF6osc9OxLS9FnxaQGgqiCra1G3fMDrKUOMh6HKeHksOIJv05bk1D_sLvTAIYVgqakwKMSmhQTjO4_rn_qWxOwe6-JzzEzhRo0KtrtHPJxW5Y59WoTVzUwLMgPMQXeKto3IAJ37aguZO7hhzI_TtA_23NwaL9yMBbTbmY3U5jo4ZDl28vlZROmLwVezGF5N155gpsKPz6NAw-UiIV2P9pEjgQC3Q1nx93EQRMujYrxYHe4VO0UAGjm-7lcGMsXr4hDH"
-              loading="lazy"
-            />
+            <picture>
+              <source srcSet="/gallery/exteriors/exteriors_03.webp" type="image/webp" />
+              <source srcSet="/gallery/exteriors/exteriors_03.jpg" type="image/jpeg" />
+              <img
+                alt={t('gallery.exteriorNatural')}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/gallery/exteriors/exteriors_03.jpg"
+                loading="lazy"
+              />
+            </picture>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
-              <span className="text-white font-medium">{t('gallery.lobby')}</span>
+              <span className="text-white font-medium">{t('gallery.exteriorNatural')}</span>
             </div>
           </div>
         </div>

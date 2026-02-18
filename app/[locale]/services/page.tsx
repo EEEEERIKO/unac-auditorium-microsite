@@ -19,12 +19,16 @@ export default function ServicesPage() {
             <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">{t('description')}</p>
           </div>
           <div className="relative h-64 lg:h-96 rounded-xl overflow-hidden shadow-2xl">
-            <img
-              alt="Auditorium View"
-              className="w-full h-full object-cover"
-              src={t('heroImage')}
-              loading="lazy"
-            />
+            <picture>
+              <source srcSet="/gallery/events-ceremonies/events-ceremonies_16.webp" type="image/webp" />
+              <source srcSet="/gallery/events-ceremonies/events-ceremonies_16.jpg" type="image/jpeg" />
+              <img
+                alt="Auditorium View"
+                className="w-full h-full object-cover"
+                src="/gallery/events-ceremonies/events-ceremonies_16.jpg"
+                loading="lazy"
+              />
+            </picture>
             <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
           </div>
         </div>
@@ -160,12 +164,16 @@ export default function ServicesPage() {
           </div>
           <div className="lg:col-span-3 min-h-[300px] relative">
             <div className="absolute inset-0 bg-slate-200 dark:bg-slate-800">
-              <img
-                className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJTOmrDpwJ_HsBB4fYkgIPhkvPApauxhYFla7P_LcHZ14UQp2M8aiTTPa_m8D7n_9i5ApwbtecuDEmiO216ZVH41U7VIOzFd9f3HoUAU2yKA7sJJSMT8Y1bssLXF3haF4oaEyOPLmrxOiAdspjycMLMIR-IVLV3N-HJ2VC7pKK-nOheGofHIQwRrX6254JVNgd4SfubZ6EecUF-qW5HsFamXTc8UItMNXx59qyTfNpb_Dfgkd6FsDYIiMiYHrdduqxRNfIMRFFs2id"
-                alt="Campus Map"
-                loading="lazy"
-              />
+              <picture>
+                <source srcSet="/gallery/campus/campus-aerial.webp" type="image/webp" />
+                <source srcSet="/gallery/campus/campus-aerial.jpg" type="image/jpeg" />
+                <img
+                  className="w-full h-full object-cover"
+                  src="/gallery/campus/campus-aerial.jpg"
+                  alt="Campus Map"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ export function Hero() {
           className="w-full h-full object-cover"
           loading="eager"
           decoding="async"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKfsVlpxOMhIaFcuZCJ9QU1jEIc_9PhSi3NV7GeY-gRv-rRICGDURQYoDkarqDFGepoGu2fu5femZDynYhCs_CKy67SrGF0d_Q-Ys7Bhbc4HB-JjkKTkHi-g7RDSn72aISQNosGG05O7nZyAPYSS4jxEYfSRlWyjs8wPkp4QxxhdYpYnIk_PJrIdvRuvYJFgukN4FkKaD68UwXWGKymS6oUMjC6WxhxOpe6HTvTikydw582LyK8eDKBqYPIaHz2LAmV-LUn7Vga55P"
+          src="/gallery/exteriors/exteriors_04.jpg"
         />
         <div className="absolute inset-0 bg-slate-900/40"></div>
         <div className="absolute inset-y-0 left-0 w-full md:w-1/2 bg-gradient-to-r from-primary/90 to-transparent"></div>

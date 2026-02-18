@@ -104,9 +104,9 @@
     "mainTitle": "Auditorio GW Chapman: Un Espacio de Excelencia Institucional",
     "mainDescription": "El epicentro de la vida académica y cultural de la UNAC. Un recinto diseñado para albergar los momentos más significativos de nuestra comunidad, combinando tradición, arquitectura de vanguardia y tecnología de punta.",
     "gallery": {
-      "stage": "Escenario Principal",
+      "internationalEvents": "Eventos Internacionales",
       "seating": "Silletería de Confort",
-      "lobby": "Lobby y Foyer"
+      "exteriorNatural": "Exterior Natural"
     },
     "virtualTour": {
       "title": "Inmersión Total en 360°",
@@ -219,9 +219,9 @@
     },
     "location": {
       "title": "Ubicación y Logística",
-      "description": "Convenientemente ubicado dentro del campus UNAC, el auditorio GW Chapman cuenta con rampas de accesibilidad y proximidad a estacionamiento seguro en el campus.",
-      "campus": "Campus Principal, Edificio C.",
-      "parking": "Espacios de Estacionamiento Ejecutivo Reservados"
+      "description": "El Auditorio GW Chapman se encuentra estratégicamente ubicado en el Campus Principal de la UNAC (Edificio C). Acceso directo sin barreras arquitectónicas, amplias áreas de estacionamiento ejecutivo reservado, y proximidad a servicios complementarios dentro del campus para garantizar una experiencia sin inconvenientes.",
+      "campus": "Cra. 84, Cl. 33AA #01",
+      "parking": "Estacionamiento Ejecutivo Reservado - 25+ espacios de cortesía"
     },
     "cta": {
       "title": "¿Listo para tu evento?",
