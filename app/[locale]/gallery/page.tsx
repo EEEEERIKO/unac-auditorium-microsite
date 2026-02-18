@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
+import Image from 'next/image';
 import { galleryImages } from '@/lib/gallery-config';
 
 export default function GalleryPage() {
@@ -59,16 +60,17 @@ export default function GalleryPage() {
               image.size === 'large' ? 'md:row-span-2 md:col-span-2' : ''
             } ${image.size === 'wide' ? 'md:col-span-2' : ''}`}
           >
-            {/* WebP with JPG fallback */}
-            <picture>
-              <source srcSet={image.webp} type="image/webp" />
-              <source srcSet={image.jpg} type="image/jpeg" />
-              <img
-                alt={`Gallery image ${image.id}`}
-                className="w-full h-64 md:h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                src={image.jpg}
-              />
-            </picture>
+            {/* Optimized Next.js Image with Lazy Loading */}
+            <Image
+              alt={`Gallery image ${image.id}`}
+              src={image.webp}
+              width={600}
+              height={400}
+              loading="lazy"
+              quality={75}
+              className="w-full h-64 md:h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 300px"
+            />
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-[#295787]/0 group-hover:bg-[#295787]/90 transition-colors duration-300 flex items-center justify-center">
