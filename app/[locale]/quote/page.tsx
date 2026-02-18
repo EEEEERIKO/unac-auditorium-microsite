@@ -154,10 +154,11 @@ export default function QuotePage() {
                 {[
                   { name: 'sound', label: t('technicalRequirements.sound') },
                   { name: 'lighting', label: t('technicalRequirements.lighting') },
-                  { name: 'streaming', label: t('technicalRequirements.streaming') },
                   { name: 'projection', label: t('technicalRequirements.projection') },
-                  { name: 'recording', label: t('technicalRequirements.recording') },
-                  { name: 'itSupport', label: t('technicalRequirements.itSupport') }
+                  { name: 'itSupport', label: t('technicalRequirements.itSupport') },
+                  { name: 'tableSetup', label: t('technicalRequirements.tableSetup') },
+                  { name: 'catering', label: t('technicalRequirements.catering') },
+                  { name: 'instrumentals', label: t('technicalRequirements.instrumentals') }
                 ].map(req => (
                   <label key={req.name} className="flex items-center p-3 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-[#295787]/50 cursor-pointer transition-colors group">
                     <input 

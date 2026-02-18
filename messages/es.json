@@ -266,19 +266,33 @@
         "meeting": "Junta Directiva"
       },
       "tentativeDate": "Fecha Tentativa",
+      "eventDuration": "Duración del Evento",
+      "eventDurationOptions": {
+        "singleDay": "Un día",
+        "multiDay": "Múltiples días"
+      },
+      "selectDates": "Selecciona Los Días Requéridos",
       "attendees": "Número de Asistentes",
       "attendeesMax": "Máx 600",
       "duration": "Duración (Horas)",
+      "hoursDuration": "Duración (Horas)",
       "durationPlaceholder": "2"
     },
     "technicalRequirements": {
       "title": "Requisitos Técnicos",
-      "sound": "Sonido Profesional",
-      "lighting": "Iluminación de Escenario",
+      "sound": "Sonido Profesional Mundial",
+      "lighting": "Sistema de Iluminación",
       "streaming": "Transmisión en Vivo",
-      "projection": "Proyección (4K)",
-      "recording": "Grabación de Video",
-      "itSupport": "Soporte TI"
+      "projection": "Proyección en Alta Definición",
+      "recording": "Grabación Profesional",
+      "itSupport": "Soporte Técnico Especializado",
+      "tableSetup": "Mesas",
+      "catering": "Servicio de Comida",
+      "instrumentals": "Servicio de Instrumentales"
+    },
+    "additionalNotes": {
+      "label": "Observaciones Adicionales",
+      "placeholder": "Describe aquí cualquier detalle especial, requisitos específicos o consideraciones adicionales para tu evento..."
     },
     "contactRepresentative": {
       "title": "Representante de Contacto",

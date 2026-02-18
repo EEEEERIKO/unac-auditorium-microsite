@@ -264,19 +264,33 @@
         "meeting": "Board Meeting"
       },
       "tentativeDate": "Tentative Date",
+      "eventDuration": "Event Duration",
+      "eventDurationOptions": {
+        "singleDay": "Single Day",
+        "multiDay": "Multiple Days"
+      },
+      "selectDates": "Select Required Days",
       "attendees": "Number of Attendees",
       "attendeesMax": "Max 450",
       "duration": "Duration (Hours)",
+      "hoursDuration": "Duration (Hours)",
       "durationPlaceholder": "2"
     },
     "technicalRequirements": {
       "title": "Technical Requirements",
-      "sound": "Professional Sound",
-      "lighting": "Stage Lighting",
+      "sound": "World-Class Professional Sound",
+      "lighting": "Lighting System",
       "streaming": "Live Streaming",
-      "projection": "Projection (4K)",
-      "recording": "Video Recording",
-      "itSupport": "IT Support"
+      "projection": "High-Definition Projection",
+      "recording": "Professional Recording",
+      "itSupport": "Specialized Technical Support",
+      "tableSetup": "Tables",
+      "catering": "Food Service",
+      "instrumentals": "Instrumental Service"
+    },
+    "additionalNotes": {
+      "label": "Additional Notes",
+      "placeholder": "Describe here any special details, specific requirements or additional considerations for your event..."
     },
     "contactRepresentative": {
       "title": "Contact Representative",

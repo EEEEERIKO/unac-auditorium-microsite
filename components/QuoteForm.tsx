@@ -8,12 +8,13 @@ import { z } from 'zod';
 
 const quoteSchema = z.object({
   eventType: z.string().min(1, 'Event type is required'),
+  eventDurationType: z.string().min(1, 'Duration type is required'),
   tentativeDate: z.string().min(1, 'Date is required'),
+  selectedDates: z.array(z.string()).optional(),
   attendees: z.string().refine((v) => !isNaN(parseInt(v)) && parseInt(v) >= 1),
   duration: z.string().refine((v) => !isNaN(parseFloat(v)) && parseFloat(v) >= 1),
   services: z.array(z.string()).optional(),
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Invalid email address'),
+  additionalNotes: z.string().optional(),
   phone: z.string().min(7, 'Phone must be at least 7 digits'),
 });
 

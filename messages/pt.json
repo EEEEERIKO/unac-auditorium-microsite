@@ -264,19 +264,33 @@
         "meeting": "Reunião de Conselho"
       },
       "tentativeDate": "Data Tentativa",
+      "eventDuration": "Duração do Evento",
+      "eventDurationOptions": {
+        "singleDay": "Um dia",
+        "multiDay": "Múltiplos dias"
+      },
+      "selectDates": "Selecione Os Dias Necessários",
       "attendees": "Número de Participantes",
       "attendeesMax": "Máx 600",
       "duration": "Duração (Horas)",
+      "hoursDuration": "Duração (Horas)",
       "durationPlaceholder": "2"
     },
     "technicalRequirements": {
       "title": "Requisitos Técnicos",
-      "sound": "Som Profissional",
-      "lighting": "Iluminação de Palco",
+      "sound": "Som Profissional de Classe Mundial",
+      "lighting": "Sistema de Iluminação",
       "streaming": "Transmissão ao Vivo",
-      "projection": "Projeção (4K)",
-      "recording": "Gravação de Vídeo",
-      "itSupport": "Suporte de TI"
+      "projection": "Projeção em Alta Definição",
+      "recording": "Gravação Profissional",
+      "itSupport": "Suporte Técnico Especializado",
+      "tableSetup": "Mesas",
+      "catering": "Serviço de Comida",
+      "instrumentals": "Serviço de Instrumentais"
+    },
+    "additionalNotes": {
+      "label": "Observações Adicionais",
+      "placeholder": "Descreva aqui qualquer detalhe especial, requisitos específicos ou considerações adicionais para seu evento..."
     },
     "contactRepresentative": {
       "title": "Representante de Contato",
