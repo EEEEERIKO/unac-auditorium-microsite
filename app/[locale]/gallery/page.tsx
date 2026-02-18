@@ -2,65 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
-
-const galleryImages = [
-  {
-    id: 'mainHall',
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBGobukvzy8XHHzrjNTLjdev-ATSLatRprIsuNG1v-h9I3I1NgU9wwh7U1thHoG2mMTBN-5I8og3FrQ6V2mT2DOMRB0sw7ysIxVJoDSEGQDjkzl86MOHEzAtZBQFjuNhh_YPMrTmMXaeQmIlaQoNyYtFjFKRF_7JJrVVPkhew5nLIJi0-g7RgfXT7VPQg5bYItxjoRDjop5cRsvx5N3ENnabRha8QprTxUJfzAzb5FwxRx0WlojlcVHI56SnA2rHY0dqI29hV5MsKsb',
-    category: 'architecture',
-    large: true,
-    wide: false
-  },
-  {
-    id: 'symposia',
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCYeyjHEKMJnp160KvTlDyYztsLcHhBu6dy91Jh95J4KwQDqi2IBJ6EZhmELvuGh5gFeJT2I4Nhrt9Fw5XWTHwC52FZb7Nzi-75MjqTy5N4MF4rlcGa-1yh8T9XWPZIFW2rZ4tXdfqjySv6QX2l6imUVDMcMI0EPQpVWQ1raPJsxe9sECcVGJBF6an0m5REd-NZcI7xTuKT4G5g2pjPtEMXbC6y6KCR_jZLoU6gSZb-DY6y7hgTmbNJsf5aNLEEq_dJCwhEtomMvxjT',
-    category: 'events',
-    large: false,
-    wide: true
-  },
-  {
-    id: 'plaza',
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDJkVfhHbmIfA4RuuVTuYV-COS_sWJezyKPScXTCK4IWFRKnqgE3LJtC3IG6yAjkkshJW_vqbfhNxDWS5AYUHaT37XJRh7t37EWuJqFDI7IIXspom5i4gK-mU0v4CLxwTCKroRo5tjJ3btaiF2N_bZTmAQnZiJAgK0QidVCRKzA5TiaFN9HpPyy2Oy1ox3guevjV88fhJFiydPB_RepaBKQOhjEvHNoXQDGBGWSdAw59qs8zBax5TVu_n_JZWbMfVXen_BU0JeTImQW',
-    category: 'exteriors',
-    large: false,
-    wide: false
-  },
-  {
-    id: 'keynote',
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBuB2v2Z959hmPcwx1M11eYTxl71rwRVz2NpaX3JY0A-AvTWhnMvy_vSRpDno2fJYuNzxWWmo8Y6oPCB9MeWv7hzbWPBI5CVYZAL4eamdRnAY0jxSUfueBheX85cleKQmei3imkdLuImrihdBNlFcZm4dp-yL5AL_OMOALVNJameck0iBTep8m8vgnAXiY7Z0ywRaSiOWu-KpSDKO3T3ztWpRJrz1Fzdt_MhqXu7tsWrKZyRlu83c__zEcnWirH-6Vv5GpmkqCDv7Jb',
-    category: 'setups',
-    large: false,
-    wide: false
-  },
-  {
-    id: 'banquets',
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAvg5xcqXGymkRBhJ7XC8sULzba1Juyu9Q_Qt1n_NBXHCO6LfJ2_bLreaJ4lWRlXBAVBhDqIyufz4ijWGp3aFa4ivurW-XcBLE2FAkGLgk7rx9Zpvmk8k7qWd_RMqUsA-1-qn9fMfof8MyCJhY3QuDIW_28Nnr8CNJDpMcwXegwz7j1_CpIKAY8j3yd6AXFlHVqxJRFxXtgr6AUkHmIMKIoOg0JQe_A08fBEKodviIDd5Qo2ZQ3GM80HIIIq6K1cKgph-4pYP2dyrjT',
-    category: 'setups',
-    large: false,
-    wide: true
-  },
-  {
-    id: 'seating',
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCDTRDJxfh4ozmmexl_4GfTIjoHWIE6KuHIISa9j3q4JwKW5CV6vP19jp_SNeEgL2qrmalxcLA91rjhP9TM-jJ-13un-jv8tYS2O8HYXrJ6r8YAl5nEyPafw1hej7S6fEWs6LQ3wYtTQpDslLvHaLTwZ-waO9cQzpCjzyPAzDhK1EEVaWtDTSLdqfSyG_Dc5Ol2BC4ILOqbN4p67ShbJ1S5Vt3TLUO8vUTQEzybnkz-WzIqfX7y2i5tPhTveLUHOrkQYa4e5I0s8qMn',
-    category: 'architecture',
-    large: true,
-    wide: false
-  },
-  {
-    id: 'evening',
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB5_7SgJS-7W3K5DicF2iKo4ikDepIHvo7ju88GQ5tqMn3_-wR47z22E6Hg2N4MCoWY22RG56cy_8z3Qg_ikRLdtjlBabDLtmY32hQDC-ih-8bEroTFRFekd__urIT4Nqjc-7gPmZgxjfJ0OhKdiL0_jfO5YG4vYIbZ7HzFsLVckSHgtCgS9oZEogipn3Qhbifg7L-y2EHsgBreLwC4YPbjrJ7xvGBsfvF3sACAArIk8MnWVMLFpYLDRuk96USMIHFHGSOVm7BkNw51',
-    category: 'exteriors',
-    large: false,
-    wide: false
-  },
-  {
-    id: 'technology',
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCCSkD2IJXhZysduyiLGqHTnmKrl7mmU8blvF8FZ8eDpQZSS7eGmihWxavEmTXsRWIGrFiZNAISSZ490qC1lTyFEK-MpK32MPG9PhRz64lSibbgwHxpgsjCQZ_C3d97flnS91aGnzaMXf5nFXZA3Hy-PA8yMqJfJRUAjtxlN07J0JgrmGENO7NpnHV7FVBWVTmdAKlmU0uUz8E1CXPxzchHZ4kx4XcjsyQ8Mozggygy8xvucGHX2yO1G93bFjZR34B8KyqWCaW0imLm',
-    category: 'technology',
-    large: false,
-    wide: false
-  }
-];
+import { galleryImages } from '@/lib/gallery-config';
 
 export default function GalleryPage() {
   const t = useTranslations();
@@ -72,9 +14,9 @@ export default function GalleryPage() {
 
   const filterOptions = [
     { key: 'all', label: t('gallery.filters.all') },
-    { key: 'architecture', label: t('gallery.filters.architecture') },
-    { key: 'events', label: t('gallery.filters.events') },
+    { key: 'events-ceremonies', label: t('gallery.filters.eventsCeremonies') },
     { key: 'setups', label: t('gallery.filters.setups') },
+    { key: 'interior', label: t('gallery.filters.interior') },
     { key: 'exteriors', label: t('gallery.filters.exteriors') }
   ];
 
@@ -109,41 +51,40 @@ export default function GalleryPage() {
       </div>
 
       {/* Gallery Grid */}
-      <div className="gallery-grid gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-20">
         {filteredImages.map(image => (
           <div
             key={image.id}
-            className={`gallery-item relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 group ${
-              image.large ? 'row-span-2' : ''
-            } ${image.wide ? 'col-span-2' : ''}`}
+            className={`relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 group cursor-pointer ${
+              image.size === 'large' ? 'md:row-span-2 md:col-span-2' : ''
+            } ${image.size === 'wide' ? 'md:col-span-2' : ''}`}
           >
-            <img
-              alt={t(`gallery.items.${image.id}.title`)}
-              className="w-full h-full object-cover"
-              src={image.src}
-            />
-            <div className="hover-overlay absolute inset-0 bg-[#295787]/90 flex flex-col justify-end p-6 md:p-8 text-white">
-              <span className="text-xs uppercase tracking-widest font-bold opacity-80 mb-2">
-                {t(`gallery.items.${image.id}.category`)}
-              </span>
-              <h3 className={`font-bold mb-2 ${image.large || image.wide ? 'text-2xl' : 'text-lg'}`}>
-                {t(`gallery.items.${image.id}.title`)}
-              </h3>
-              {(() => {
-                const description = t(`gallery.items.${image.id}.description`);
-                return description && description.trim() ? (
-                  <p className="text-sm text-white/80">
-                    {description}
-                  </p>
-                ) : null;
-              })()}
+            {/* WebP with JPG fallback */}
+            <picture>
+              <source srcSet={image.webp} type="image/webp" />
+              <source srcSet={image.jpg} type="image/jpeg" />
+              <img
+                alt={`Gallery image ${image.id}`}
+                className="w-full h-64 md:h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                src={image.jpg}
+              />
+            </picture>
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-[#295787]/0 group-hover:bg-[#295787]/90 transition-colors duration-300 flex items-center justify-center">
+              <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="flex items-center justify-center gap-2 text-xs uppercase tracking-widest font-bold mb-2">
+                  <span className="material-icons-outlined text-yellow-300">image</span>
+                  {t(`gallery.categories.${image.category}`)}
+                </div>
+              </div>
             </div>
           </div>
         ))}
       </div>
 
       {/* CTA Section */}
-      <section className="mt-20 bg-[#295787] rounded-2xl p-12 text-center text-white relative overflow-hidden">
+      <section className="bg-gradient-to-r from-[#295787] to-[#1a3a54] rounded-2xl p-12 text-center text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 -mr-12 -mt-12 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
         <div className="relative z-10">
           <h3 className="text-3xl font-bold mb-4">
@@ -153,7 +94,7 @@ export default function GalleryPage() {
             {t('gallery.cta.description')}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-white text-[#295787] px-8 py-3 rounded-lg font-bold hover:bg-opacity-95 transition-all">
+            <button className="bg-white text-[#295787] px-8 py-3 rounded-lg font-bold hover:bg-opacity-95 transition-all shadow-lg hover:shadow-xl">
               {t('gallery.cta.button1')}
             </button>
             <button className="bg-[#295787] border border-white/30 text-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition-all">

@@ -232,58 +232,22 @@
     "description": "Explore our world-class facilities designed for high-profile academic events, international conferences, and cultural performances.",
     "filters": {
       "all": "All Views",
-      "architecture": "Architecture",
-      "events": "Events & Ceremonies",
+      "eventsCeremonies": "Events & Ceremonies",
       "setups": "Setups",
+      "interior": "Interior",
       "exteriors": "Exteriors"
     },
-    "items": {
-      "mainHall": {
-        "category": "Architecture",
-        "title": "Main Hall - 500 Capacity",
-        "description": "Acoustically optimized grand hall with premium tiered seating."
-      },
-      "symposia": {
-        "category": "Events",
-        "title": "International Symposia",
-        "description": "State-of-the-art audiovisual support for global speakers."
-      },
-      "plaza": {
-        "category": "Exteriors",
-        "title": "Main Plaza Entrance",
-        "description": ""
-      },
-      "keynote": {
-        "category": "Setups",
-        "title": "Keynote Configuration",
-        "description": ""
-      },
-      "banquets": {
-        "category": "Setups",
-        "title": "Institutional Banquets",
-        "description": "Versatile floor space for formal dining and networking."
-      },
-      "seating": {
-        "category": "Architecture",
-        "title": "Ergonomic Design",
-        "description": "Premium materials ensuring comfort for extended sessions."
-      },
-      "evening": {
-        "category": "Exteriors",
-        "title": "Evening Grandeur",
-        "description": ""
-      },
-      "technology": {
-        "category": "Technology",
-        "title": "Advanced AV Suite",
-        "description": ""
-      }
+    "categories": {
+      "events-ceremonies": "Events & Ceremonies",
+      "setups": "Setups",
+      "interior": "Interior",
+      "exteriors": "Exteriors"
     },
     "cta": {
-      "title": "Host Your Next Event With Us",
-      "description": "Experience the perfect blend of institutional prestige and modern technology for your university's most important milestones.",
-      "button1": "Download Venue Specs",
-      "button2": "Schedule a Private Tour"
+      "title": "Transform Your Event",
+      "description": "The G.W Chapman Auditorium features the most advanced technology, capacity for 600+ attendees, and a professional team ready to make your event extraordinary.",
+      "button1": "Request a Quote",
+      "button2": "Learn More"
     }
   },
   "quote": {
