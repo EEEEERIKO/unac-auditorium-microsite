@@ -1,14 +1,17 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import { MapWithPin } from '@/components/MapWithPin';
 import { Viewer360 } from '@/components/Viewer360';
+import { Modal360 } from '@/components/Modal360';
 
 export default function AuditoriumPage() {
   const t = useTranslations('auditorium');
   const locale = useLocale();
+  const [isModal360Open, setIsModal360Open] = useState(false);
 
   return (
     <main className="min-h-screen">
@@ -117,7 +120,10 @@ export default function AuditoriumPage() {
                   </p>
                 </div>
               </div>
-              <button className="mt-8 flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-xl font-bold hover:shadow-xl hover:shadow-primary/20 transition-all group">
+              <button
+                onClick={() => setIsModal360Open(true)}
+                className="mt-8 flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-xl font-bold hover:shadow-xl hover:shadow-primary/20 transition-all group"
+              >
                 <span className="material-icons group-hover:rotate-12 transition-transform">360</span>
                 {t('virtualTour.button')}
               </button>
@@ -201,6 +207,13 @@ export default function AuditoriumPage() {
           </div>
         </div>
       </section>
+
+      <Modal360
+        isOpen={isModal360Open}
+        onClose={() => setIsModal360Open(false)}
+        imageSrc="/auditorium-360-dji.jpg"
+        alt="Recorrido Virtual 360° Auditorio GW Chapman"
+      />
     </main>
   );
 }
