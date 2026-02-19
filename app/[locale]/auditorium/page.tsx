@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import { MapWithPin } from '@/components/MapWithPin';
+import { Viewer360 } from '@/components/Viewer360';
 
 export default function AuditoriumPage() {
   const t = useTranslations('auditorium');
@@ -123,14 +124,9 @@ export default function AuditoriumPage() {
             </div>
 
             <div className="w-full lg:w-1/2 aspect-video bg-slate-800 rounded-2xl relative overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800">
-              <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-900/40 text-white z-10 backdrop-blur-[2px]">
-                <span className="material-icons text-6xl mb-4 animate-pulse">view_in_ar</span>
-                <p className="font-medium text-lg">Cargando Recorrido Virtual...</p>
-              </div>
-              <img
-                alt="Vista 360 Previa"
-                className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA34ahcvclZKljFD51PglDUJtlguTFF3DhammuSxZOjjRixW3VcTLomcwWU7AdyXwr9TPeVSwh1pgKrklmREGkDiyqg68_wbQrb-7Qe5rAc6zWwsc70X9HIHdcERKEZFdt15bzhCuiy1WKGy5f6iFzjoPwlMudwEKgRxQB1RXFMnKGl5bvOHgfQ-D6ETiGf1OBPu-7u7pCMj0QsPMS9Ly9BXrzVuze9OzQD-MpdIb-GmMB-ozbi0gLGJB7zlN5K5fGgozngBjRdQuxV"
+              <Viewer360
+                imageSrc="/auditorium-360-dji.jpg"
+                alt="Recorrido Virtual 360° Auditorio GW Chapman"
                 loading="lazy"
               />
             </div>
